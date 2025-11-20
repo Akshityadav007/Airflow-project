@@ -1,0 +1,78 @@
+# ----------------------------------------------------------------------
+# Python
+# ----------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.sqlite
+*.log
+
+# Virtual envs
+venv/
+.env/
+.env*/
+*.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ----------------------------------------------------------------------
+# Airflow
+# ----------------------------------------------------------------------
+# Airflow runtime directories
+logs/
+airflow-webserver.pid
+airflow-scheduler.pid
+airflow-worker.pid
+airflow.db
+airflow.cfg
+
+# Serialized DAGs (if enabled)
+serialized_dags/
+
+# Plugins compiled artifacts
+plugins/__pycache__/
+
+# ----------------------------------------------------------------------
+# Docker
+# ----------------------------------------------------------------------
+# Local Docker metadata
+.docker/
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Ignore containers' volume mount data
+postgres-db-volume/
+*/postgres-data/
+*/redis-data/
+
+# ----------------------------------------------------------------------
+# OS / IDE noise
+# ----------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ----------------------------------------------------------------------
+# Build artifacts
+# ----------------------------------------------------------------------
+dist/
+build/
+*.egg-info/
+
+# ----------------------------------------------------------------------
+# Credentials (NEVER COMMIT)
+# ----------------------------------------------------------------------
+*.key
+*.pem
+*.crt
+*.p12
+secrets/
+credentials.json
+**/config/*.json
+config/*.env
