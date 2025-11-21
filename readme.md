@@ -1,3 +1,9 @@
+## Note: This project is part of multiple projects (below mentioned):
+1. [E-Com-Delta-Lakehouse](https://github.com/Akshityadav007/E-Com-Delta-Lakehouse)
+
+
+# Architecture of the project
+
 ```text
                            ┌────────────────────────┐
                            │        Sources         │
