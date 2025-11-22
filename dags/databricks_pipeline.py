@@ -10,9 +10,9 @@ with DAG(
     tags=["databricks"],
 ) as dag:
 
-    run_job = DatabricksRunNowOperator(
+    run_test_job = DatabricksRunNowOperator(
         task_id="run_TestNotebook",
         databricks_conn_id="databricks_default",
         job_id=506081232181301,
     )
-    run_job
+    run_test_job
